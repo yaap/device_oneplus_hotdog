@@ -394,4 +394,7 @@
         <item>132</item> <!-- sensorRadius -->
      </integer-array>
 
+     <!-- Whether device supports increased touch sensitvity -->
+     <bool name="config_supportGloveMode">true</bool>
+
 </resources>
