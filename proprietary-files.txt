@@ -24,8 +24,8 @@ vendor/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
 vendor/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 
 # Audio
-vendor/lib/hw/audio.primary.msmnile.so
-vendor/lib64/hw/audio.primary.msmnile.so
+vendor/lib/hw/audio.primary.msmnile.so;DISABLE_CHECKELF
+vendor/lib64/hw/audio.primary.msmnile.so;DISABLE_CHECKELF
 
 # Camera
 vendor/etc/camera/ashdr/ncf_pack_s5k3m5.ncf
@@ -133,7 +133,7 @@ vendor/lib64/hw/goodix.fod.msmnile.so
 vendor/lib64/fp_hal_extension.so
 vendor/lib64/libarm_proxy_skel.so
 vendor/lib64/libgf_ud_hal.so
-vendor/lib64/libhvx_proxy_stub.so
+vendor/lib64/libhvx_proxy_stub.so;DISABLE_CHECKELF
 
 # Sensors
 vendor/etc/sensors/config/ak991x_0.json
@@ -208,7 +208,6 @@ vendor/etc/sensors/config/sx9324_0.json
 vendor/etc/sensors/config/sx932x_0.json
 vendor/etc/sensors/config/tcs3701.json
 vendor/etc/sensors/sns_reg_config
-vendor/lib/sensors.ssc.so
 vendor/lib64/sensors.ssc.so
 
 # Vibrator Firmware
@@ -217,3 +216,10 @@ vendor/firmware/aw8697_haptic_168.bin
 vendor/firmware/aw8697_haptic_170.bin
 vendor/firmware/aw8697_haptic_172.bin
 vendor/firmware/aw8697_haptic_174.bin
+
+# MDM Interface
+vendor/bin/ks
+vendor/bin/mdm_helper
+-vendor/lib64/libmdmdetect.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libmdmimgload.so
+vendor/lib64/liboemnvbk_img_helper.so
