@@ -216,10 +216,3 @@ vendor/firmware/aw8697_haptic_168.bin
 vendor/firmware/aw8697_haptic_170.bin
 vendor/firmware/aw8697_haptic_172.bin
 vendor/firmware/aw8697_haptic_174.bin
-
-# MDM Interface
-vendor/bin/ks
-vendor/bin/mdm_helper
--vendor/lib64/libmdmdetect.so;MODULE_SUFFIX=_vendor
-vendor/lib64/libmdmimgload.so
-vendor/lib64/liboemnvbk_img_helper.so
